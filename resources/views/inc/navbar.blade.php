@@ -20,6 +20,11 @@
             <a class="nav-link" href="/posts">Posts</a>
         </li>  
       </ul>
+      <ul class="nav nav-pills navbar-right">
+        <li>
+          <a href="/posts/create">Create Post</a>
+        </li>
+      </ul>
     </div>
   </nav>
   
