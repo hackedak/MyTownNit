@@ -1,11 +1,7 @@
 @extends('layout.app')
 @section('content')
-<pre>
+<h1>post</h1>
 
-
-
-    <h1>post</h1>
-</pre>
 
  @if (count($posts) >= 1)
      @foreach ($posts as $post)
