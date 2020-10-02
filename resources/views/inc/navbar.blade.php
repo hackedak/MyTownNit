@@ -1,10 +1,11 @@
 
+<div class="contain">
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="/">MyTownNit</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -18,7 +19,7 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/posts">Posts</a>
-        </li>  
+        </li>
       </ul>
       <ul class="nav nav-pills navbar-right">
         <li>
@@ -27,4 +28,4 @@
       </ul>
     </div>
   </nav>
-  
+</div>
