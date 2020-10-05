@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url(https://fonts.googleapis.com/css2?family=Yellowtail&display=swap);
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -41,6 +42,7 @@
 *, :after, :before {
 	box-sizing: border-box
 }
+
 html {
 	font-family: sans-serif;
 	line-height: 1.15;
@@ -3104,7 +3106,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 .nav-link {
 	display: block;
-	padding: .5rem 1rem
+    padding: .5rem 1rem
 }
 .nav-link:focus, .nav-link:hover {
 	text-decoration: none
@@ -3118,7 +3120,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 	border-bottom: 1px solid #dee2e6
 }
 .nav-tabs .nav-item {
-	margin-bottom: -1px
+    margin-bottom: -1px
+
 }
 .nav-tabs .nav-link {
 	border: 1px solid transparent;
@@ -3848,21 +3851,32 @@ a.badge-dark.focus, a.badge-dark:focus {
 	box-shadow: 0 0 0 .2rem rgba(52, 58, 64, .5)
 }
 .jumbotron {
-	padding: 2rem 1rem;
-	margin-bottom: 2rem;
-	background-color: #e9ecef;
-	border-radius: .3rem
+    background-image: url(/images/book.jpg);
+    font-family:'Yellowtail', cursive;
+    background-size: cover;
 }
-@media (min-width:576px) {
-	.jumbotron {
-		padding: 4rem 2rem
-	}
+@media screen and (min-width:300px) and (max-width:767px) {
+    .jumbotron{
+        padding: 1rem;
+     }
+     .card-title{
+         font-size: 20vw;
+     }
 }
-.jumbotron-fluid {
-	padding-right: 0;
-	padding-left: 0;
-	border-radius: 0
+@media screen and (min-width:768px) and (max-width:991px) {
+    .jumbotron{
+        margin: 2em 4em;
+        padding: 2em;
+     }
 }
+@media screen and (min-width:992px) {
+    .jumbotron{
+        margin: 5em 20em;
+        padding: 2rem 1rem;
+     }
+}
+
+
 .alert {
 	position: relative;
 	padding: .75rem 1.25rem;
