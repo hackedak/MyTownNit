@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\PagesController;
+use GuzzleHttp\Middleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,6 @@ Route::get('/', [PagesController::class, 'index']);
 Route::get('/about', [PagesController::class, 'About']);
 Route::get('/services', [PagesController::class, 'services']);
 Route::resource('posts', 'App\Http\Controllers\PostsController');
+Route::get('/home', function () {
+    return view('home');
+})->middleware('auth');
