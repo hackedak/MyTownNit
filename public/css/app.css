@@ -6,6 +6,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
  .contain{
      margin-bottom: 100px;
  }
@@ -126,13 +127,12 @@ sup {
 	top: -.5em
 }
 a {
-	color: #007bff;
+	color: inherit;
 	text-decoration: none;
 	background-color: transparent
 }
 a:hover {
-	color: #0056b3;
-	text-decoration: underline
+	text-decoration: wavy;
 }
 a:not([href]), a:not([href]):hover {
 	color: inherit;
@@ -3456,7 +3456,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 	background-color: #fff;
 	background-clip: border-box;
 	border: 1px solid rgba(0, 0, 0, .125);
-	border-radius: .25rem
+    border-radius: .25rem;
+    padding: 1em;
 }
 .card>hr {
 	margin-right: 0;
@@ -12310,4 +12311,10 @@ div[data-toggle=buttons] label.active, div[data-toggle=buttons] label:active {
 }
 .account-admin-subnav li:last-child {
 	border-radius: 0 .25rem .25rem 0
+}
+.dark,
+.dark * {
+    background-color: #222;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
 }
