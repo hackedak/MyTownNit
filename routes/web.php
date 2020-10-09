@@ -23,6 +23,6 @@ Route::get('/', [PagesController::class, 'index']);
 Route::get('/about', [PagesController::class, 'About']);
 Route::get('/services', [PagesController::class, 'services']);
 Route::resource('posts', 'App\Http\Controllers\PostsController');
-Route::get('/home', function () {
-    return view('home');
+Route::get('/dashboard', function () {
+    return view('dashboard');
 })->middleware('auth');
