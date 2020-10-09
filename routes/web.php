@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\PagesController;
 use GuzzleHttp\Middleware;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,12 @@ Route::get('/', [PagesController::class, 'index']);
 Route::get('/about', [PagesController::class, 'About']);
 Route::get('/services', [PagesController::class, 'services']);
 Route::resource('posts', 'App\Http\Controllers\PostsController');
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware('auth');
+
+
+Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index');
+
+
+//Route::get('/dashboard', function () {
+//    return view('dashboard');
+//})->middleware('auth');
+
