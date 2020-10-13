@@ -100,12 +100,23 @@
     .cards-wrapper {
       grid-template-columns: 1fr 1fr;
     }
+
+    .date{
+        margin-top:40vh;
+        position: absolute;
+
+    }
   }
 
   @media screen and (max-width: 900px) {
     .cards-wrapper {
       grid-template-columns: 1fr;
     }
+    .date{
+        margin-top:100vw;
+        position: absolute;
+
+      }
   }
 
   @media screen and (max-width: 500px) {
@@ -115,8 +126,12 @@
     .cards-wrapper .card {
       max-width: calc(100vw - 4rem);
     }
-  }
+    .date{
+        margin-top:100vw;
+        position: absolute;
 
+      }
+  }
  /*-----------------------------------------------------------------------------------------------------------------------*/
  /*-----------------------------------------------------------------------------------------------------------------------*/
  .contain{

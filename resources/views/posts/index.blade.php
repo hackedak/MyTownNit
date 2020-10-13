@@ -11,8 +11,8 @@
                         <div class="card">
                             <div class="container">
                                 <h1><a href="/posts/{{$post->id}}">{{$post->title}}</a></h1>
-                                <div class="card-img-overlay d-flex align-items-end flex-column">
-                                   <div class="card-text mt-auto">Written on {{$post->created_at}}</div>
+                                <div class="card-text">
+                                   <div class="date">Written on {{$post->created_at->format('d.m.Y')}}</div>
                                 </div>
                             </div>
                         </div>
