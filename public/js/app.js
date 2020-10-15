@@ -37338,3 +37338,4 @@ module.exports = __webpack_require__(/*! /opt/lampp/htdocs/blog/resources/css/ap
 /***/ })
 
 /******/ });
+CKEDITOR.replace( 'article-ckeditor' );
