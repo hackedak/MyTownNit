@@ -14,11 +14,14 @@
         </div>
     </div>
     <hr>
+
+    @auth
     <a href="/posts/{{$post->id}}/edit" class="btn btn-secondary">Edit</a>
     {!!Form::open(['action'=>['App\Http\Controllers\PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'float-right'])!!}
     {{Form::hidden('_method', 'DELETE')}}
     {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
     {!!Form::close()!!}
+    @endauth
 </div>
 @endsection
 
