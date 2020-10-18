@@ -9,11 +9,7 @@ use Session;
 
 class PostsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    //function for listing all posts
     public function index()
     {   //return Post::all();  this code is for dev purpose
         //$posts = Post::all();                 //this will show all the post in default order
@@ -21,29 +17,20 @@ class PostsController extends Controller
         return view('posts.index')->with('posts', $posts);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    //calls create view
     public function create()
     {
         return view('posts.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    //Creates new post and add it to the database
     public function store(Request $request)
     {
         $this->validate($request,[
             'title' => 'required',
             'body' => 'required'
         ]);
-        //Create Post
+
         $post = new Post;
         $post->title = $request->input('title');
         $post->body = $request->input('body');
@@ -53,62 +40,62 @@ class PostsController extends Controller
         return redirect('/posts')->with('success', 'Post Created');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    //Show a perticular post
     public function show($id)
     {
         $post = Post::find($id);
-        return view('posts.show')->with('post', $post);
+        if ($post) {
+
+            return view('posts.show')->with('post', $post);
+
+        }
+        else{
+            abort(404);
+
+        }
+
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    //Calls edit view
     public function edit($id)
     {
-      $post = Post::find($id);
-      return view('posts.edit')->with('post', $post);
+
+        $post = Post::where('id', $id)->firstOrFail();
+        if (Auth::id() == $post->user_id) {
+            return view('posts.edit')->with('post', $post);
+        }
+        else{
+            return redirect('/posts')->with('error', 'Unauthorized Access');
+        }
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    //Update post
     public function update(Request $request, $id)
     {
       $this->validate($request,[
           'title' => 'required',
           'body' => 'required'
       ]);
-      //Create Post
       $post = Post::find($id);
+      if (Auth::id() != $post->user_id){
+        return redirect('/posts')->with('error', 'Unauthorized Access');
+      }
       $post->title = $request->input('title');
       $post->body = $request->input('body');
       $post->save();
 
-      return redirect('/posts')->with('success', 'Post Updated');
+      return redirect('/dashboard')->with('success', 'Post Updated');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    // Delete a post
     public function destroy($id)
     {
       $post = Post::find($id);
+      if (Auth::id() != $post->user_id){
+        return redirect('/posts')->with('error', 'Unauthorized Access');
+      }
       $post->delete();
       return redirect('/posts')->with('success', 'Post Deleted');
+
     }
 }

@@ -1,33 +1,25 @@
-</pre>
-
-
-
-
-
-
-
 
 @if (count($errors)>0)
     @foreach ($errors->all() as $error)
         <div class="alert alert-danger">
             {{$error}}
         </div>
-    @endforeach    
+    @endforeach
 @endif
     </pre>
 
 @if (session('success'))
 
 <div class="alert alert-success">
-    {{session('success')}}
+    {!!Session::get('success')!!}
 </div>
-    
+
 @endif
 
 @if (session('error'))
 
 <div class="alert alert-danger">
-    {{session::get('error')}}
+    {!!Session::get('error')!!}
 </div>
-    
+
 @endif
