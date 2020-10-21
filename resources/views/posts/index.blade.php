@@ -8,8 +8,9 @@
             @if (count($posts) >= 1)
                 @foreach ($posts as $post)
                     <div class="card-grid-space">
-                        <div class="card">
-                            <div class="container">
+                        <div class="card img-fluid">
+                           <img class="card-img-top" style="width: 100%" src="/storage/cover_images/{{$post->cover_image}}">
+                            <div class="card-img-overlay">
                                 <h1><a href="/posts/{{$post->id}}">{{$post->title}}</a></h1>
                                 <div class="card-text">
                                    <div class="date">Written on {{$post->created_at->format('d.m.Y')}}</div>
