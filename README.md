@@ -1,6 +1,9 @@
 # Welcome to MyTownNit 👋
+[![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat)]() ![Maintenance](https://img.shields.io/maintenance/yes/2020) [![Active](http://img.shields.io/badge/Status-Active-green.svg)](https://tterb.github.io)
+
+
 ![Version](https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000)
-[![Twitter: AtulKrishnan12](https://img.shields.io/twitter/follow/AtulKrishnan12.svg?style=social)](https://twitter.com/AtulKrishnan12)
+
 
 > A simple blog site developed using laravel and bootstrap with user profile feature
 
@@ -42,7 +45,7 @@ php artisan serve
 ## Creator
 
 👤 **Atul Krishnan**
-
+[![Twitter: AtulKrishnan12](https://img.shields.io/twitter/follow/AtulKrishnan12.svg?style=social)](https://twitter.com/AtulKrishnan12)
 * Website: https://hackedak.github.io/my-website/
 * Twitter: [@AtulKrishnan12](https://twitter.com/AtulKrishnan12)
 * Github: [@hackedak](https://github.com/hackedak)
