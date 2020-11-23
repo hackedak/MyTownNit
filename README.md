@@ -34,10 +34,10 @@ php artisan serve
 
 ## Screenshots
 ![Screenshot](https://github.com/hackedak/MyTownNit/blob/master/screenshots/createpost.PNG)
-![Screenshot](screenshots/dashboard.png)
-![Screenshot](screenshots/frontpage.png)
-![Screenshot](screenshots/login.png)
-![Screenshot](screenshots/postedit.png)
+![Screenshot](https://github.com/hackedak/MyTownNit/blob/master/screenshots/dashboard.PNG)
+![Screenshot](https://github.com/hackedak/MyTownNit/blob/master/screenshots/frontpage.PNG)
+![Screenshot](https://github.com/hackedak/MyTownNit/blob/master/screenshots/login.PNG)
+![Screenshot](https://github.com/hackedak/MyTownNit/blob/master/screenshots/postedit.PNG)
 
 ## Creator
 
