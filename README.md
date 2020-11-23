@@ -33,7 +33,11 @@ php artisan serve
 ```
 
 ## Screenshots
-![Create Post](https://drive.google.com/file/d/1r6_BODP19696CaH9G7uzbJXX6OXKE_xz/preview)
+![Screenshot](screenshots/createpost.png)
+![Screenshot](screenshots/dashboard.png)
+![Screenshot](screenshots/frontpage.png)
+![Screenshot](screenshots/login.png)
+![Screenshot](screenshots/postedit.png)
 
 ## Creator
 
