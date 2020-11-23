@@ -33,7 +33,7 @@ php artisan serve
 ```
 
 ## Screenshots
-[[ page: Creating post | https://drive.google.com/file/d/1r6_BODP19696CaH9G7uzbJXX6OXKE_xz/view?usp=sharing ]]
+<img src="https://drive.google.com/file/d/1r6_BODP19696CaH9G7uzbJXX6OXKE_xz/view?usp=sharing" alt="Create Post" title="Create Post" />
 
 ## Creator
 
