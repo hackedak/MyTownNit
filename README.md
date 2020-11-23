@@ -33,7 +33,7 @@ php artisan serve
 ```
 
 ## Screenshots
-<img src="https://drive.google.com/file/d/1r6_BODP19696CaH9G7uzbJXX6OXKE_xz/view" alt="Create Post" title="Create Post" />
+<iframe src="https://drive.google.com/file/d/1r6_BODP19696CaH9G7uzbJXX6OXKE_xz/preview" width="640" height="480"></iframe>
 
 ## Creator
 
