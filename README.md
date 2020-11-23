@@ -33,7 +33,7 @@ php artisan serve
 ```
 
 ## Screenshots
-![Screenshot](screenshots/createpost.png)
+![Screenshot](https://github.com/hackedak/MyTownNit/blob/master/screenshots/createpost.PNG)
 ![Screenshot](screenshots/dashboard.png)
 ![Screenshot](screenshots/frontpage.png)
 ![Screenshot](screenshots/login.png)
