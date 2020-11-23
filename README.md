@@ -36,7 +36,7 @@ php artisan serve
 ![Screenshot](https://github.com/hackedak/MyTownNit/blob/master/screenshots/createpost.PNG)
 ![Screenshot](https://github.com/hackedak/MyTownNit/blob/master/screenshots/dashboard.PNG)
 ![Screenshot](https://github.com/hackedak/MyTownNit/blob/master/screenshots/frontpage.PNG)
-![Screenshot](https://github.com/hackedak/MyTownNit/blob/master/screenshots/login.PNG)
+![Screenshot](https://github.com/hackedak/MyTownNit/blob/master/screenshots/loginpage.PNG)
 ![Screenshot](https://github.com/hackedak/MyTownNit/blob/master/screenshots/postedit.PNG)
 
 ## Creator
