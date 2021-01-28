@@ -1,5 +1,5 @@
 # Welcome to MyTownNit 👋
-[![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat)]() ![Maintenance](https://img.shields.io/maintenance/yes/2020) [![Active](http://img.shields.io/badge/Status-Active-green.svg)](https://tterb.github.io)
+[![GitHub last commit](https://img.shields.io/github/last-commit/hackedak/MyTownNit)]() ![Maintenance](https://img.shields.io/maintenance/yes/2020) [![Active](http://img.shields.io/badge/Status-Active-green.svg)](https://tterb.github.io)
 
 
 ![Version](https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000)
